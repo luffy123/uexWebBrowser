@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uexplugins>
+    <plugin
+        className="org.zywx.wbpalmstar.plugin.uexwebbrowser.EUExWebBrowser" uexName="uexWebBrowser" >
+        <method name="init"/>
+        <method name="open"/>
+        <method name="close"/>
+        <method name="goBack"/>
+        <method name="goForward"/>
+        <method name="canGoBack"/>
+        <method name="canGoForward"/>
+        <method name="reload"/>
+        <method name="loadUrl"/>
+        <method name="evaluateJavascript"/>
+        <method name="getTitle"/>
+    </plugin>
+</uexplugins>

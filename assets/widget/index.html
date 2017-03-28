@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script type="text/javascript">
+    function init(){
+        var params = {
+            debug:false,
+
+        };
+        uexWebBrowser.init(params);
+    }
+
+    function openView(){
+        var params = {
+            w:1080,
+            h:600,
+            y:500,
+            url:"https://www.baidu.com"
+        };
+        var data = JSON.stringify(params);
+        uexWebBrowser.open(data);
+    }
+
+    function closeView(){
+        var params = {
+        };
+        var data = JSON.stringify(params);
+        uexWebBrowser.close(data);
+    }
+
+    function goBack(){
+        var params = {
+        };
+        var data = JSON.stringify(params);
+        uexWebBrowser.goBack(data);
+    }
+
+    function goForward(){
+        var params = {
+        };
+        var data = JSON.stringify(params);
+        uexWebBrowser.goForward(data);
+    }
+
+    function canGoBack(){
+        var params = {
+        };
+        var data = JSON.stringify(params);
+        uexWebBrowser.canGoBack(data);
+    }
+
+    function canGoForward(){
+        var params = {
+        };
+        var data = JSON.stringify(params);
+        uexWebBrowser.canGoForward(data);
+    }
+
+    function reload(){
+        var params = {
+        };
+        var data = JSON.stringify(params);
+        uexWebBrowser.reload(data);
+    }
+
+    function loadUrl(){
+        uexWebBrowser.loadUrl("http://m.hao123.com");
+    }
+
+    function evaluateJavascript(){
+        var params = {
+        };
+        var data = JSON.stringify(params);
+        uexWebBrowser.evaluateJavascript(data);
+    }
+
+
+        window.uexOnload = function(type){
+            if(type == 0){
+
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+<div class="tit">uexWebBrowser</div>
+<div class="conbor">
+    <div class="consj">
+            <input class='btn' type='button' value='init' onclick='init()'>
+
+            <input class='btn' type='button' value='open' onclick='openView()'>
+
+            <input class='btn' type='button' value='close' onclick='closeView()'>
+
+            <input class='btn' type='button' value='goBack' onclick='goBack()'>
+
+            <input class='btn' type='button' value='goForward' onclick='goForward()'>
+
+            <input class='btn' type='button' value='canGoBack' onclick='canGoBack()'>
+
+            <input class='btn' type='button' value='canGoForward' onclick='canGoForward()'>
+
+            <input class='btn' type='button' value='reload' onclick='reload()'>
+
+            <input class='btn' type='button' value='loadUrl' onclick='loadUrl()'>
+
+            <input class='btn' type='button' value='evaluateJavascript' onclick='evaluateJavascript()'>
+
+
+    </div>
+</div>
+</body>
+</html>
