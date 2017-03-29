@@ -19,7 +19,7 @@
         var params = {
             w:1080,
             h:600,
-            y:500,
+            y:800,
             url:"https://www.baidu.com"
         };
         var data = JSON.stringify(params);
@@ -73,10 +73,8 @@
     }
 
     function evaluateJavascript(){
-        var params = {
-        };
-        var data = JSON.stringify(params);
-        uexWebBrowser.evaluateJavascript(data);
+        var js="javascript:console.log('----------------')";
+        uexWebBrowser.evaluateJavascript(js);
     }
 
 
